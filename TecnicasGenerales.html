@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF8">
+		<meta name="description" content="Información de etiquetas HTML5 y uso CSS accesibilidad">
+		<meta name="keywords" content="etiquetas,HTML5,CSS">
+		<meta name="author" content="Javier del Aguila Sola">
+		<meta http-equiv="refresh" content="300">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+		<title>Tecnicas generales</title>
+		<base href="Index.html">
+		<link rel="stylesheet" href="style.css">
+        <link href="jk10.ico" rel="icon" type="image/x-icon">
+	</head>
+
+	<body>
+
+		<header id="titulo">
+
+			<h1><a href="Index.html" tabindex="1" role="Logo">DISEÑO WEB</a></h1>
+
+		</header>
+
+		<nav role="Menu">
+			
+			<ul id="menu">
+
+				<li><a href="Index.html" tabindex="1">Inicio</a></li>
+				<li><a href="Tema1.html" tabindex="2">Tema 1</a></li>
+				<li><a href="Tema5.html"tabindex="3">Tema 5</a></li>
+				<li><a href="proximamente.html" tabindex="4">Tema 3</a></li>
+				<li><a href="proximamente.html" tabindex="5">Tema 4</a></li>
+
+			</ul>
+
+
+		</nav>
+
+			<main id= "main">
+
+				<article>
+                    <section>
+				
+					<header tabindex="6" role="Cabecera"><h2>Tecnicas generales<h2></header>
+
+                        <h3 tabindex="7">G217 Permitir al usuario modificar o desactivar los atajos</h3>
+                        <p>Algunos autores crean atajos en sus aplicaciones para permitir a los usuarios interacciones más rápidas. Pero cuando los atajos solamente están formados por un carácter como clave, como pueden ser letras, números, o símbolos, sin modificadores como por ejemplo la tecla control, crean unas dificultades para los usuarios que funcionan con el uso por voz, además de usuarios con dificultades para escribir de forma precisa.</p>
+                        <p>Para evitar activaciones involuntarias, los creadores deben permitir a los usuarios poder desactivar los atajos o reconfigurar las teclas para dichos atajos. Configurar el atajo debe permitir no solo modificar la tecla, sino el uso de teclas modificadoras.</p>
+                        
+                        <h3 tabindex="8">G216 Proporcionar activación de un solo punto para un selector deslizante</h3>
+                        <p>El objetivo de esta técnica es asegurar que los usuarios que tienen dificultades para realizar movimientos rectos y precisos puedan controlar con facilidad y sin problemas las barras control, como por ejemplo una barra para controlar el volumen.</p>
+                        <p>Una forma de ayudar a los usuarios de forma simple, es dar la posibilidad de hacer click en la posición a la que quieres que se desplace. Así se puede asignar el valor con un solo click.</p>
+                        <p>Dar controles alternativos como por ejemplo moverlo con las flechas del teclado.</p>
+                        <br>
+                        <label for="ejemplo" name="ejemplo">ejemplo</label>
+                        <input type="range" name="ejemplo">
+
+                        <h3 tabindex="9">3-G215 Proporcionar controles para lograr el mismo resultado que los gestos multipunto o basados ​​en ruta</h3>
+                        <p>El objetivo es asegurar que los usuarios que tienen dificultades a la hora de utilizar desplegables puedan operar con un solo click. Un desplegable de  contenido contiene bloques de contenido dentro de una fila. En ocasiones varios de estos bloques de contenido se encuentran ocultos y solo uno de ellos es visible a cada momento. Deslizar por encima del bloque visible hace que los bloques contenidos ocultas se vuelvan visibles. Es importante dar al usuario herramientas alternativas como por ejemplo las flechas para poder desplazarse por estos menús.</p>
+                        <p>En dispositivos de pantallas táctiles, estas funciones no suelen funcionar cuando a nivel de sistema operativo hay tecnología de asistencia como por ejemplo un lector de pantalla activado. </p>
+                        <div >
+                            <ul class="ejemeploMenu">
+                                <li ><a href="TecnicasGenerales.html" aria-label="Inicio" tabindex="0">Inicio</a></li>
+                                <li><a href="TecnicasGenerales.html" aria-label="Servicios" tabindex="0">Servicios</a>
+                                    <ul>
+                                        <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu1" tabindex="0">Submenu1</a></li>
+                                        <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu2" tabindex="0">Submenu2</a></li>
+                                        <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu3" tabindex="0">Submenu3</a></li>
+                                        <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu4" tabindex="0">Submenu4</a>
+                                            <ul>
+                                                <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu1" tabindex="0">Submenu1</a></li>
+                                                <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu2" tabindex="0">Submenu2</a></li>
+                                                <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu3" tabindex="0">Submenu3</a></li>
+                                                <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu4" tabindex="0">Submenu4</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="TecnicasGenerales.html" aria-label="Acerca de">Acerca de</a>
+                                    <ul>
+                                        <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu1">Submenu1</a></li>
+                                        <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu2">Submenu2</a></li>
+                                        <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu3">Submenu3</a></li>
+                                        <li><a href="TecnicasGenerales.html" aria-labelledby="Submenu4">Submenu4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h3 tabindex="10">G214 Usar un control para permitir el acceso al contenido en diferentes orientaciones que de otra manera estaría restringido</h3>
+                        <p>El objetivo de esta técnica se trata de permitir a los usuarios acceder al contenido de la manera que el usuario prefiera. Desde el  punto de vista de quien crea el contenido, es normal esperar que el usuario vaya a verlo utilizando una orientación específica o que va a querer mantener la visión original en el dispositivo. Como resultado se evita que el contenido pueda rotar, pero proveyendo al usuario con una herramienta que permita al usuario rotar el contenido, si alguien que tiene una necesidad de utilizar una orientación específica podrá ver el contenido de forma cómoda. Por ejemplo alguien que no puede sostener el dispositivo y lo tiene unido a una silla de ruedas o la coma.</p>
+                        <p>Un ejemplo de codigo que te permite girar la orientación de la página seria el siguiente en CSS.</p>
+                            <pre><code>#container { display:block; }
+            @media only screen and (orientation:portrait){
+            #container { 
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    }
+    
+            }
+            @media only screen and (orientation:landscape){
+            #container {  
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    }
+            }</code></pre>
+                        <h3 tabindex="11">G213 Proporciona controles convencionales y una configuración de aplicación para la entrada activada por movimiento</h3>
+                        <p>El objetivo de esta técnica es la de asegurar:</p>
+                            <p>Personas que utilizan dispositivos acoplados o que no pueden  utilizar de forma precisa los dispositivos, sean capaces de inputs de forma más fácil a través de componentes de interfaz.<br>
+                            Personas que podrían activar de forma accidental los sensores debido al temblor o a otros impedimentos debido al motor puedan desactivar las acciones de movimiento.</p>
+  
+                        <p>Cuando un sensor como por ejemplo un giroscopio es utilizado para entrada:
+                            <p>Dar otras opciones que no dependan del sensor, tales como botones o enlaces por ejemplo.<br>
+                            Dar la posibilidad al usuario para desactivar el sensor.</p>
+                        
+                        <h3 tabindex="12">G212 Usar controles nativos para garantizar que la funcionalidad se active en el evento up.</h3>
+                        <p>El objetivo de esta técnica es asegurar que los usuarios que intenten interactuar con un control, no activen el evento de forma accidental. Esto puede conseguirse con el uso de activadores del evento.</p>
+                        <p>El método más sencillo para conseguir este criterio es utilizar los comportamientos por defecto de los controladores, no sobreescribiendo su comportamiento. </p>
+                        <p>En lenguajes nativos donde el control es activado en un evento inactivo, es normalmente por un buen motivo y fácilmente reversible.</p>
+
+                        <h3 tabindex="13">G211 Hacer coincidir el nombre accesible con la etiqueta visible</h3>
+                        <p>Cuando usuarios que utilizan una entrada por voz para interactuar con la página web, normalmente dicen un comando seguido por la referencia de alguna etiqueta visible. Por ejemplo, ellos podrían decir, “click en buscar” para acceder al apartado de búsqueda. Cuando el programa de reconocimiento de voz recibe la entrada,  busca por ocurrencias en los nombres de los controles. Donde haya una diferencia entre el texto en la etiqueta y el texto en el nombre puede causar problemas para el usuario. La forma más simple de activar la entrada por voz es hacer que el nombre de accesibilidad sea el mismo que el del texto visible.</p>
+                        <p>Algunas veces más de una cadena de texto se encuentra alrededor de un control y puede ser candidata para la etiqueta. Por ejemplo una serie de entradas con su propia etiqueta debe ir precedida por una cabecera, una instrucción o un grupo de etiquetas (Como por ejemplo HTML legend /fieldset). Es recomendable que solo se utilicen etiquetas cercanas para el propósito de ser etiquetas de control.</p>
+                        
+                        <h3 tabindex="14">G210 Garantizar que las acciones de arrastrar y soltar se puedan cancelar</h3>
+                        <p>El objetivo de esta técnica trata de que el usuario pueda cancelar la acción de arrastrar un objeto y soltarlo en otro punto. Esto puede ser hecho soltando el objeto fuera de la zona donde está preparada para que sea soltada o moviendo el objeto a la posición en la que se encontraba. Otra opción posible es la de una vez arrastrado el objeto pedir una confirmación de si se quiere realizar la acción.</p>
+                        <p>En pantallas táctiles cuando están activados programas para la lectura de pantalla, puede ocurrir que al arrastrar lo que ocurra será que se desplace únicamente el foco del programa de lectura.</p>
+                        <input type="file">
+
+                        <h3 tabindex="15">G209 Proporciona suficiente contraste en los límites entre colores contiguos</h3>
+                        <p>El objetivo de esta tecnica se trata de que personas con problemas de vista moderados pueden distinguir los bordes entre distintos segmentos de color.</p>
+                        <p>El criterio de éxito para el contraste sin texto utiliza el término "objeto gráfico" para cubrir pequeños gráficos simples y partes de gráficos complejos más grandes. Esta técnica se enfoca en segmentos de colores sólidos donde los límites entre colores transmiten significado.</p>
+                        <p>Cuando elegimos un color para gráficos con múltiples colores, al añadir colores adyacentes comprueba que al menos el contraste es de 3:1. En caso de que no se cumpla añade un borde que contraste al menos en 3:1 entre ellos.</p>
+                        <figure >
+                            <img src="graficobarras.gif" id="graficobarras">
+                            <figcaption>Gráfico de ejemplo</figcaption>
+                        </figure>
+
+                        <h3 tabindex="16">G204 No interferir con reposicionamiento del texto cuando la ventana de visualización se reduce</h3>
+                        <p>Esta técnica ayuda a evitar situaciones donde el scroll horizontal pudiera ocurrir. Muchas personas con problemas cognitivos y baja visibilidad que no utilizan tecnología de asistencia tienen grandes problemas a la hora de lidiar con bloques de texto en los que debes utilizar el scroll horizontal. Una de las mejores formas de hacer esto es definir un ancho  para el contenedor del bloque de texto con porcentajes.</p>
+                        <p>HTML y XHTML utiliza agentes que automáticamente recoloca el texto en cuando la ventana del navegador es achicada siempre y cuando el autor no especifique ancho con medidas absolutas como pixeles.</p>
+
+					</section>
+					
+				</article>
+				
+			</main>
+
+            <aside id="lateral" role="Barra lateral">
+
+                <header> <h2>Tema 5</h2></header>
+
+                <ul>
+                    <li><a href="Tema5.html" tabindex="17">Consorcio WC3</a></li>
+                    <li><a href="wcag.html" tabindex="18">WCAG</a></li>
+                    <li><a href="TecnicasGenerales.html" tabindex="19">Tecnicas generales</a></li>
+                    <li><a href="TecnicasHTML.html" tabindex="20">Tecnicas HTML</a></li>
+                    <li><a href="TecnicasCSS.html" tabindex="21">Tecnicas CSS</a></li>
+					<li><a href="TecnicasAria.html" tabindex="22">Tecnicas Aria</a></li>
+					<li><a href="TecnicasPDF.html" tabindex="23">Tecnicas PDF</a></li>
+                    <li><a href="ErroresComunes.html" tabindex="24">Errores Comunes</a></li>
+
+                </ul>
+
+            </aside>
+
+			<footer>
+
+				<div id="pie" role="Pie de página">
+					<h3 tabindex="25">Creado por Javier del Águila Sola</h3>
+				</div>
+
+			</footer>
+	</body>
+
+</html>

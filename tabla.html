@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF8">
+		<meta name="description" content="Información de etiquetas HTML5 y uso CSS">
+		<meta name="keywords" content="etiquetas,HTML5,CSS">
+		<meta name="author" content="Javier del Aguila Sola">
+		<meta http-equiv="refresh" content="300">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+		<title>Tema 1</title>
+		<base href="Index.html">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+		<header id="titulo">
+
+			<h1><a href="Index.html">DISEÑO WEB</a></h1>
+
+		</header>
+
+		<nav >
+			
+			<ul id="menu">
+
+				<li><a href="Index.html">Inicio</a></li>
+				<li><a href="Tema1.html">Tema 1</a></li>
+				<li><a href="proximamente.html">Tema 2</a></li>
+				<li><a href="proximamente.html">Tema 3</a></li>
+				<li><a href="proximamente.html">Tema 4</a></li>
+
+			</ul>
+
+
+		</nav>
+
+			<main id= "main">
+
+				<article>
+				
+					<header><h2>TEMA 1<h2></header>
+
+					<section>
+
+                        <p>Se usa para crear tablas. Dentro se usan colgroup para agrupar columnas y darle estilos, caption para añadir un tilulo en la parte superior de la tabla,thead para contener la fila de la cabezera, tbody para el contenido de la tabla y tfoot para el pie de tabla. Dentro de las tres últmas se introduciría el tr para crear un fila y dentro de tr va td para crear cada celda de esa fila.</p>
+						
+						<table class="tabla">
+                            <caption class="tabla">Horario 2º DAW</caption>
+                            <thead>
+                                <tr>
+                                    <th>Horas</th>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>8:15-9:15</td>
+                                    <td rowspan="2">Matematicas</td>
+                                    <td rowspan="2">Matematicas</td>
+                                    <td rowspan="2">Matematicas</td>
+                                    <td rowspan="2">Lengua</td>
+                                    <td rowspan="2">Filosofia</td>
+                                </tr>
+                                <tr>
+                                    <td>9:15-10:15</td>
+                                </tr>
+                                <tr>
+                                    <td>10:15-11:15</td>
+                                    <td>Filosofia</td>
+                                    <td>Filosofia</td>
+                                    <td>Lengua</td>
+                                    <td>Biologia</td>
+                                    <td>Lengua</td>
+                                </tr>
+                                <tr>
+                                    <td>11:15-11:45</td>
+                                    <td colspan="5" class="descanso">RECREO</td>
+                                </tr>
+                                <tr>
+                                    <td>11:45-12:45</td>
+                                    <td rowspan="2">Lengua</td>
+                                    <td rowspan="2">Física</td>
+                                    <td>Lengua</td>
+                                    <td>Lengua</td>
+                                    <td>Biologia</td>
+                                </tr>
+                                <tr>
+                                    <td>12:45-13:45</td>
+                                    <td rowspan="2">Física</td>
+                                    <td rowspan="2">Física</td>
+                                    <td rowspan="2">Física</td>
+                                </tr>
+                                <tr>
+                                    <td>13:45-14:45</td>
+                                    <td>Biologia</td>
+                                    <td>Biologia</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <td colspan="6">Pie de tabla</td>
+                            </tfoot>
+                        </table>
+
+					</section>
+					
+				</article>
+				
+			</main>
+
+            <aside id="lateral">
+
+                <header> <h2>Tema 1</h2></header>
+
+                <ul>
+                    <li><a href="Tema1.html">Introducción HTML</a></li>
+                    <li><a href="Etiquetmeta.html">Etiquetas de metadatos</a></li>
+                    <li><a href="Etiquetsec.html">Etiquetas de seccion</a></li>
+                    <li><a href="Elebloque.html">Elemento de bloque</a></li>
+                    <li><a href="eleline.html">Elemento de linea</a></li>
+					<li><a href="tabla.html">Tablas html</a></li>
+					<li><a href="position.html">Position</a></li>
+
+                </ul>
+
+            </aside>
+
+			<footer>
+
+				<div id="pie">
+					<h3>Creado por Javier del Águila Sola</h3>
+				</div>
+
+			</footer>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

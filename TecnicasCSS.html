@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+	<head>
+
+		<meta charset="UTF8">
+		<meta name="description" content="Información de etiquetas HTML5 y uso CSS accesibilidad">
+		<meta name="keywords" content="etiquetas,HTML5,CSS">
+		<meta name="author" content="Javier del Aguila Sola">
+		<meta http-equiv="refresh" content="300">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+		<title>Tecnicas CSS</title>
+		<base href="Index.html">
+		<link rel="stylesheet" href="style.css">
+        <link rel="next" href="TecnicasCSS">
+        <link href="jk10.ico" rel="icon" type="image/x-icon">
+
+	</head>
+
+	<body>
+
+		<header id="titulo">
+
+			<h1><a href="Index.html" tabindex="1" role="Logo">DISEÑO WEB</a></h1>
+
+		</header>
+
+		<nav role="Menu">
+			
+			<ul id="menu">
+
+				<li><a href="Index.html" tabindex="1">Inicio</a></li>
+				<li><a href="Tema1.html" tabindex="2">Tema 1</a></li>
+				<li><a href="Tema5.html"tabindex="3">Tema 5</a></li>
+				<li><a href="proximamente.html" tabindex="4">Tema 3</a></li>
+				<li><a href="proximamente.html" tabindex="5">Tema 4</a></li>
+
+			</ul>
+
+
+		</nav>
+
+			<main id= "main">
+
+				<article>
+
+                    <section>
+
+						<header tabindex="6" role="Cabecera"><h2>Tecnicas CSS<h2></header>
+
+						<h3 tabindex="7">C13 Usar tamaños de fuente con nombre</h3>
+						<p>El objetivo de esta técnica es especificar un tamaño de fuente con nombre que exprese el tamaño de fuente relativo deseado. Estos valores proporcionan sugerencias para que pueda elegir un tamaño de fuente.</p>
+						<p class="ejemploCSS">ejemplo</p>
+						<h3 tabindex="8">C14 Uso de unidades em para tamaños de fuente</h3>
+						<p>El objetivo de esta técnica es especificar el tamaño de fuente del texto en unidades em para que los agentes de usuario puedan escalar el contenido de manera efectiva. Dado que el em es una propiedad de la fuente, se escala a medida que la fuente cambia de tamaño.</p>
+						
+						<h3 tabindex="9">C15 Usar CSS para cambiar la presentación de un componente de la interfaz de usuario cuando recibe el foco</h3>
+						<p>El objetivo de esta técnica es demostrar cómo se puede mejorar la apariencia visual a través de hojas de estilo para proporcionar retroalimentación visual cuando un elemento interactivo tiene el foco o cuando un usuario se desplaza sobre él usando un dispositivo señalador. Resaltar el elemento que tiene el foco o sobre el que se desplaza el cursor puede proporcionar información como el hecho de que el elemento es interactivo o el alcance del elemento interactivo.</p>
+						<p class="ejemploCSS"><a>ejemplo</a></p>
+
+						<h3 tabindex="10">C17 Escalar elementos de formulario que contienen texto</h3>
+						<p>El objetivo de esta técnica es garantizar que los controles de formulario basados ​​en texto cambien de tamaño cuando se cambie el tamaño del texto. Esto permitirá a los usuarios introducir texto y leer lo que introdujeron en los cuadros de entrada porque el texto se muestra en el tamaño requerido por el usuario.</p>
+						
+						<h3 tabindex="11">C18 Uso de reglas de margen y relleno de CSS en lugar de imágenes espaciadoras para el diseño del diseño</h3>
+						<p>Los diseñadores web a veces usan imágenes con espaciador (generalmente de 1x1 píxeles, GIF transparentes) para un mejor control sobre el diseño. Sin embargo, las hojas de estilo en cascada (CSS) permiten un control suficiente sobre el diseño para reemplazar las imágenes espaciadoras. Las propiedades CSS para márgenes y relleno se pueden utilizar solas o en combinación para controlar el diseño.</p>
+						<figure class="ejemploCSS">
+                            <img src="graficobarras.gif">
+                            <figcaption>Gráfico de ejemplo</figcaption>
+                        </figure>
+
+
+					</section>
+					
+				</article>
+				
+			</main>
+
+            <aside id="lateral" role="Barra lateral">
+
+                <header> <h2>Tema 5</h2></header>
+
+                <ul>
+                    <li><a href="Tema5.html" tabindex="17">Consorcio WC3</a></li>
+                    <li><a href="wcag.html" tabindex="18">WCAG</a></li>
+                    <li><a href="TecnicasGenerales.html" tabindex="19">Tecnicas generales</a></li>
+                    <li><a href="TecnicasHTML.html" tabindex="20">Tecnicas HTML</a></li>
+                    <li><a href="TecnicasCSS.html" tabindex="21">Tecnicas CSS</a></li>
+					<li><a href="TecnicasAria.html" tabindex="22">Tecnicas Aria</a></li>
+					<li><a href="TecnicasPDF.html" tabindex="23">Tecnicas PDF</a></li>
+                    <li><a href="ErroresComunes.html" tabindex="23">Errores Comunes</a></li>
+
+                </ul>
+
+            </aside>
+
+			<footer>
+
+				<div id="pie" role="Pie de página">
+					<h3 tabindex="24">Creado por Javier del Águila Sola</h3>
+				</div>
+
+			</footer>
+	</body>
+
+</html>
+
