@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+	<head>
+
+		<meta charset="UTF8">
+		<meta name="description" content="Información de etiquetas HTML5 y uso CSS accesibilidad">
+		<meta name="keywords" content="etiquetas,HTML5,CSS">
+		<meta name="author" content="Javier del Aguila Sola">
+		<meta http-equiv="refresh" content="300">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+		<title>Barreras indentificadas</title>
+		<base href="Index.html">
+		<link rel="stylesheet" href="style.css">
+        <link href="jk10.ico" rel="icon" type="image/x-icon">
+
+	</head>
+
+	<body>
+
+		<header id="titulo">
+
+			<h1><a href="Index.html" tabindex="1" role="Logo">DISEÑO WEB</a></h1>
+
+		</header>
+
+		<nav role="Menu">
+			
+			<ul id="menu">
+
+				<li><a href="Index.html" tabindex="1">Inicio</a></li>
+				<li><a href="Tema1.html" tabindex="2">Tema 1</a></li>
+				<li><a href="./Tema2/index.html" tabindex="5">Tema 2</a></li>
+				<li><a href="./Tema3/index.html" tabindex="5">Tema 3</a></li>
+				<li><a href="Tema5.html"tabindex="3">Tema 5</a></li>
+				<li><a href="Tema6.html" tabindex="4">Tema 6</a></li>
+				
+			</ul>
+
+		</nav>
+
+			<main id= "mainTexto">
+
+				<article>
+                    <section>
+                    	<header><h2>Barreras identificadas por los usuarios<h2></header>
+                    	<p>A continuación vamos a clasificar según el tipo de impedimento del usuario. Debes tener presente que muchas de estas características pueden parecer inofensivas pero que precisamente para ciertas personas se convierten en auténticas barreras para el uso de interfaces.</p>
+						<h3>Barreras comunes</h3>
+						<h4>Problemas auditivos</h4>
+						<ul class="listaEjemplos">
+							<li>-Contenido de audio, como por ejemplo, video con voces y sonidos sin leyendas o transcripciones.</li>
+
+							<li>-Reproductores multimedia que no muestran ni leyendas ni controles de volumen.</li>
+
+							<li>-Reproductores multimedia que no ofrecen opciones para ajustar el tamaño de texto ni el color de las captions.</li>
+
+							<li>-Servicios basados en web, incluyendo aplicaciones web, que se apoyan únicamente en la voz como modo de interacción.</li>
+
+							<li>-Ausencia de lenguaje de signos para complementar información importante y texto que es difícil de leer.<li>
+						</ul>
+						<h4>Problemas cognitivos o neurológicos</h4>
+						<ul class="listaEjemplos">
+							<li>-Mecanismos de navegadores complicados y diseños de página que son difíciles de entender y utilizar.</li>
+
+							<li>-Frases complejas que resultan difíciles de leer y palabras inusuales que son difíciles de entender.</li>
+
+							<li>-Textos largos sin imágenes, gráficos u otras ilustraciones para remarcar el contexto.</li>
+
+							<li>-Contenido en movimiento, parpadeante o variante, y sonido de fondo que no se puede deshabilitar.</li>
+
+							<li>-Navegadores web o reproductores multimedia que no proveen mecanismos para eliminar animaciones y audio.</li>
+
+							<li>-Diseños de páginas que no pueden ser adaptados utilizando los controles de navegador web u hojas de estilo personalizadas. Esta era una de las consecuencias fatales de utilizar tecnologías como Flash.</li>
+						</ul>
+
+						<h4>Problemas físicos</h4>
+						<ul class="listaEjemplos">
+							<li>-Páginas web, navegadores y herramientas de diseño que no proveen soporte para teclado full keyboard.</li>
+
+							<li>-Limitaciones de tiempo insuficientes para responder o completar tareas tales como rellenar formularios online.</li>
+
+							<li>-Controles, incluyendo enlaces con texto en imágenes sin una alternativa de texto equivalente.</li>
+
+							<li>-Ausencia de pistas orientativas visuales y no visuales, de estructura de página o de asistencia para la navegación.</li>
+
+							<li>-Mecanismos de navegación y funciones de páginas inconsistentes, impredecibles y complejas.</li>
+						</ul>
+						<h4>Problemas en la vista</h4>
+						<ul class="listaEjemplos">
+							<li>Imágenes, controles y otros elementos visuales que no tengan una alternativa en texto.</li>
+
+							<li>-Texto, imágenes y estructura de página que no pueda ser escalada, o que oculta o pierde información al hacerlo.</li>
+
+							<li>-No disponer de ayudas, de asistencia a la navegación o de estructura de la página, tanto visuales como no visuales.</li>
+
+							<li>-Contenido de video sin alternativa en modo texto o con una pista de audio separada.</li>
+
+							<li>-Funciones de página y mecanismos de navegación inconsistentes impredecibles o en general complejos.</li>
+
+							<li>-Texto e imágenes con un contraste insuficiente entre los colores de fondo y primer plano.</li>
+
+							<li>-Páginas web,navegadores o herramientas de diseño sin soporte para el uso de combinaciones de colores personalizadas</li>
+						</ul>
+						<h4>Problemas en el habla</h4>
+						<ul class="listaEjemplos">
+							<li>-Servicios basados en la web, incluyendo aplicaciones web que se sustentan únicamente en la interacción por voz.</li>
+
+							<li>-Sitios web que ofrecen números de teléfonos como única opción para comunicarse con la organización.</li>
+						</ul>
+						<h3>Barreras en interfaces móviles</h3>
+							
+						<p>En general también rigen principios como que las interfaces sean perceptibles, operables, entendibles y robustas, pero las buenas prácticas cambian ya que las capacidades de interacción son menores.</p>
+						<ul class="listaEjemplos">
+							<li>-Añadir el scrolling</li>
+							<li>-Añadir alternativas al texto</li>
+							<li>-Facilitar valores por defecto</li>
+							<li>-Páginas largas, con imágenes grandes, de forma que solo se ven pequeñas partes de la página al mismo tiempo en la pantalla.</li>
+							<li>-Menor cantidad de entrada por texto o ayuda de autocompletado para estas</li>
+							<li>-Salidas unicamente por audio son problemas, ya que en muchas ocasiones no puede escucharlo mientras utilizan el teléfono</li>
+						</ul>
+
+
+					</section>					
+				</article>
+				
+			</main>
+
+            <aside id="lateral" role="Barra lateral">
+
+                <header> <h2>Tema 6</h2></header>
+
+                <ul>
+                    <li><a href="Tema6.html" tabindex="17">Desarrollo de interfaces web amigables</a></li>
+                    <li><a href="tiposUsuario.html" tabindex="18">Tipos de usuarios</a></li>
+                    <ul>
+                    	<li><a href="diversidadHabilidad.html" tabindex="22">>Diversidad de habilidades</a></li>
+                    </ul>
+                    <li><a href="BarrerasIdentificadas.html" tabindex="19">Barreras identificadas</a></li>
+                    <li><a href="estandaresExternos.html" tabindex="20">Estandares externos</a></li>
+                    <li><a href="analisisUsabilidad.html" tabindex="21">Analisis usabilidad</a></li>
+
+                </ul>
+
+            </aside>
+
+			<footer>
+
+				<div id="pie" role="Pie de página">
+					<h3 tabindex="24">Creado por Javier del Águila Sola</h3>
+				</div>
+
+			</footer>
+	</body>
+
+</html>
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF8">
+		<meta name="description" content="Información de etiquetas HTML5 y uso CSS">
+		<meta name="keywords" content="etiquetas,HTML5,CSS">
+		<meta name="author" content="Javier del Aguila Sola">
+		<meta http-equiv="refresh" content="300">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+		<title>Tema 1</title>
+		<base href="Index.html">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+		<header id="titulo">
+
+			<h1><a href="Index.html">DISEÑO WEB</a></h1>
+
+		</header>
+
+		<nav role="Menu">
+			
+			<ul id="menu">
+
+				<li><a href="Index.html" tabindex="1">Inicio</a></li>
+				<li><a href="Tema1.html" tabindex="2">Tema 1</a></li>
+				<li><a href="./Tema2/index.html" tabindex="5">Tema 2</a></li>
+				<li><a href="./Tema3/index.html" tabindex="5">Tema 3</a></li>
+				<li><a href="Tema5.html"tabindex="3">Tema 5</a></li>
+				<li><a href="Tema6.html" tabindex="4">Tema 6</a></li>
+				
+			</ul>
+
+		</nav>
+
+			<main id= "main">
+
+				<article>
+				
+					<header><h2>TEMA 1<h2></header>
+
+						<section>
+							<h3 id="Elemento de bloque">Elemento de bloque</h3>	
+							<ul>
+								<li><strong>&lt;p&gt;</strong> : Etiqueta para escribir texto en parrafos. El formato se da desde archivo CSS actualmente, por lo que los atributos para dar formato estan desfasados.</li>
+									<code>&lt;p&gt;
+										parrafo de ejemplo
+										&lt;/p&gt;
+									</code>
+								<li><strong>&lt;address&gt;</strong>  : Para la informacion de contacto para el article asociado. No esta permitido que el contenido sea un address anidado, contenido de cabecera, de sección ni elmento header o footer.</li>
+									<code>&lt;address&gt;
+										You can contact author at &lt;a href="http://www.ejemplodecontacto.com">www.contacto.com&lt;/a>
+										&lt;/address&gt;
+									</code>
+								<li><strong>&lt;hr/&gt;</strong>  : Se utiliza para separar parrafos. Es recomendoble nop utlicizar las etiquetas asociadas para darle formato y en su lugar hacerlo con CSS.</li>
+									<code>&lt;p&gt;
+										Parrafo visual para ser separado
+										&lt;/p&gt;
+										
+										&lt;hr/>
+											
+										&lt;p&gt;
+										Parrafo visual para ser separado
+										&lt;/p&gt;;
+									</code>
+								<li><strong>&lt;h1&gt;-&lt;h1&gt;</strong> : Uso para titulos, letras en negrita y tamaño dependiendo del valor. El formato se da desde archivo CSS actualmente, por lo que los atributos para dar formato estan desfasados.</li>
+									<code>
+										<h3>Ejemplo h3</h3>
+										<h4>Ejemplo h4</h4>
+										<h5>Ejemplo h5</h5>
+									</code>
+								<li><strong>&lt;pre&gt;</strong> : Texto con formato preformado, se muestra tal y como esta escrito en el archivo html. Tan solo tiene atributos globales.</li>
+									<code>
+										<pre>
+											ejemplo de 
+											texto preformateado
+										</pre>
+									</code>
+	
+								<li><strong>&lt;blockquote&gt;</strong> : Se utiliza para añadir citas a otros autores o documentos. Como atributo especifico tiene "cite", el cual proporciona enlace a la fuente original.</li>
+									<code>&lt;blockquiote cite="http://www.ejemplodecita.com">
+										Contenido de la cita.
+										&lt;/blockquote&gt;
+									</code>
+	
+								<li><strong>&lt;ol&gt;</strong> : Para hacer listas ordenadas, la lista puede estar ordenada de forma inversa si se utiliza reversed. Actualmente el formato se le da con el uso de CSS.</li>
+									<code>
+										&lt;ol><br>
+									</code>
+									<code>
+										&lt;li>primer objeto&lt;/li><br>
+	
+									</code>
+									<code>
+										&lt;li>segundo&lt;/li><br>
+	
+									</code>
+									<code>
+										&lt;/ol><br>
+									</code>
+	
+								<li><strong>&lt;ul&gt;</strong> : Para hacer listas no ordenadas. Actualmente el formato se le da con el uso de CSS.</li>
+									<code>
+										&lt;ul><br>
+									</code>
+									<code>
+										&lt;li>primer objeto&lt;/li><br>
+	
+									</code>
+									<code>
+										&lt;li>segundo&lt;/li><br>
+	
+									</code>
+									<code>
+										&lt;/ul><br>
+									</code>
+								<li><strong>&lt;dl&gt;</strong> : Para listas descriptivas. Actualmente el formato se le da con el uso de CSS.</li>
+									<code>
+										&lt;dl><br>
+									</code>
+									<code>
+										&lt;dt>palabra a definir&lt;/dt><br>
+	
+									</code>
+									<code>
+										&lt;dd>definicion&lt;/dd><br>
+	
+									</code>
+									<code>
+										&lt;/dl><br>
+									</code>
+								<li><strong>&lt;div&gt;</strong> : Utilizado para agrupar en bloques y para poder dar formato desde CSS.</li>
+	
+									<code>
+	
+										&lt;div>
+										
+											<span>Contenido del bloque</span>
+										
+										&lt;/div><br>
+	
+									</code>
+	
+								<li><strong>&lt;img&gt;</strong> : Para introducir imagenes, introduciendo enlaces con src. Consta del atributo "alt" el cual muestra un texto alternativo en caso de que no se cargue la imagen, esta informacion puede ser complementada con "longdesc". Otro atributo es "crossorigin" El cual indica si la buesqueda de la imagen debe de ser CORS, y los valores permitidos son "anonymous" en caso de no enviar credenciales o "use-credentials" en caso de enviarlas.</li>
+									<code>
+										&lt;img src="head.PNG" id="cabecera">&lt;/img><br>
+	
+									</code>
+								<li><strong>&lt;iframe&gt;</strong> : Permite incrustar otro documento html con el atributo src. No se utiliza mucho hoy en dia.</li>
+									<code>
+										&lt;iframe src="footer.html">&lt;/iframe><br>
+	
+									</code>
+							</ul>
+	
+						</section>
+					
+				</article>
+				
+			</main>
+
+            <aside id="lateral">
+
+                <header> <h2>Tema 1</h2></header>
+
+                <ul>
+                    <li><a href="Tema1.html">Introducción HTML</a></li>
+                    <li><a href="Etiquetmeta.html">Etiquetas de metadatos</a></li>
+                    <li><a href="Etiquetsec.html">Etiquetas de seccion</a></li>
+                    <li><a href="Elebloque.html">Elemento de bloque</a></li>
+                    <li><a href="eleline.html">Elemento de linea</a></li>
+					<li><a href="tabla.html">Tablas html</a></li>
+					<li><a href="position.html">Position</a></li>
+
+                </ul>
+
+            </aside>
+
+			<footer>
+
+				<div id="pie">
+					<h3>Creado por Javier del Águila Sola</h3>
+				</div>
+
+			</footer>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
