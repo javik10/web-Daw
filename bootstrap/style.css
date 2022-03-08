@@ -1,0 +1,102 @@
+body{
+background-color: #EBFEFF;
+
+}
+
+.navbar{
+    box-shadow: 0px 6px 15px #50709c;
+}
+#carouselExampleInterval{
+
+height: 22em;
+
+}
+
+.d-block.w-100{
+height: 22em;
+
+}
+
+hr{
+
+margin-top: 2em;
+margin-bottom: 3em;
+border: solid 0.15em;
+color:rgb(119, 0, 255);
+
+}
+
+.d-block.w-50.mx-auto{
+
+transition: all ease 1s;
+
+}
+#pruebot{
+
+text-align: center;
+
+}
+#icon{
+
+background-color:white ;
+}
+
+.d-block.w-50.mx-auto:hover{
+
+transition: all ease 1s;
+transform: scale(1.25, 1.25);
+
+}
+.d-md-flex.lista{
+background-color: #acd6d848;
+}
+
+.d-md-flex.destacado{
+background-color: #94C5C7;
+}
+.container.producto{
+background-color: #acd6d848;
+box-shadow: 1px 1px 40px #50709c;
+    
+}
+
+.container.bg-info{
+
+box-shadow: 1px 1px 10px rgb(64, 64, 126);
+
+}
+
+.needs-validation{
+background-color: #50709c;
+box-shadow: 1px 1px 10px rgb(64, 64, 126);
+}
+
+.btn.btn-secondary:hover{
+transition: all ease 1s;
+transform: scale(1.1, 1.1);
+background-color:#50709c;
+color:rgb(211, 231, 120);
+
+}
+.btn.btn-secondary{
+transition: all ease 1s;
+
+}
+
+#search{
+background-color: #EBFEFF;
+
+}
+
+.img-fluid.producto{
+height: 18em;
+}
+.container.m-5{
+
+height: 6em;
+
+}
+#enlace{
+text-decoration: none;
+color: black;
+}
