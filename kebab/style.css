@@ -1,0 +1,375 @@
+
+body{
+padding: 0;
+margin: 0 auto;
+background: rgb(253, 248, 230);
+font-size: larger;
+}
+
+#container{
+display: grid;
+
+}
+
+#barraSuperior{
+display:grid;
+grid-template-columns: 60% 40%;
+background-color: rgb(247, 190, 85);
+align-content: center;
+height: 5em;
+}
+
+#barraSuperior img{
+width: 70px;
+margin-left: 1em;
+
+}
+
+#barraSuperior img:hover{
+
+animation: 
+  rotacion 3s infinite alternate;
+
+
+}
+
+@keyframes rotacion {
+  
+  0%{transform:rotate(0px)}
+  25%{transform:rotate(90deg)}
+  50%{transform:rotate(180deg)}
+  75%{transform:rotate(270deg)}
+  100%{transform:rotate(360deg)}
+
+}
+
+nav{
+  
+display: grid;
+width: 70%;
+justify-items: center;
+align-items: center;
+justify-content: center;
+align-content: center;
+
+}
+
+#menu{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+width: 100%;
+
+}
+
+
+#menu li{
+display: inline;
+font-size: x-large;
+font-family: -apple-system,BlinkMacSystemFont,"Oxygen","Fira Sans","Helvetica Neue",sans-serif;
+list-style: none;
+
+}
+
+#menu li a:hover{
+transition: linear 0.75s;
+background-color: #4BC6B9;
+    
+}
+
+
+#menu li a{
+transition: linear background-color 0.75s;
+border-radius: 2em;
+color: white;
+}
+
+
+li{
+list-style:inside;
+list-style-type: none;
+margin-left: 1%;
+
+}
+
+a{
+text-decoration: none;
+
+}
+
+.cabecera{
+display: grid;
+justify-content:center;
+align-items: center;
+background-image: url("inicio2ed.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+color:whitesmoke;
+height: 300px;
+
+}
+.cabecera h1{
+text-align: center;
+
+}
+
+#presentacion{
+margin: 6em;
+padding: 2em;
+text-align: center;
+}
+
+hr{
+border:chocolate ;
+background: chocolate;
+height: 1px;
+}
+
+#presentacion p{
+padding: 2em;
+column-count: 2;
+
+}
+
+#horasect{
+display: grid;
+justify-content: center;
+
+}
+
+#horario{
+border:double peru;
+border-collapse: separate;
+border-width: 0.6em;
+border-spacing: 1em 1em;
+background: rgb(211, 160, 124);
+width: 25em;
+height: 8em;
+padding: 3em;
+padding-top: 0em;
+padding-bottom: 1em;
+font-family: fantasy;
+font-size: larger;
+margin-bottom: 6em;
+
+animation: 
+    cambiacolor 3s infinite alternate
+}
+
+@keyframes cambiacolor{
+  0%{ background:peru;}
+  25%{ background:rgba(199, 127, 54, 0.74)}
+  50%{background: rgba(205, 134, 63, 0.493);}
+  75%{ background:rgba(199, 127, 54, 0.74); }
+  100%{background: peru;}
+}
+
+#horario td{
+border-bottom: double;
+  
+}
+
+#mapa{
+display: grid;
+grid-template-columns: 60% 40%;
+justify-content: space-evenly;
+margin: 3em;
+background:rgb(245, 212, 152);
+
+}
+
+iframe{
+width: 90%;
+height: 30em;
+margin: 1em;
+border:0;
+
+}
+
+/*-------*/
+.titulo{
+text-align: center;
+margin: 1em;
+
+}
+.titulo p{
+display: inline;
+background: rgba(196, 166, 145, 0.753);
+padding: 10px;
+}
+
+h5 {
+font-weight: 500;
+line-height: 1.7em;
+}
+
+h6 {
+color: #666;
+font-size: 14px;
+}
+
+.menus {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-column-gap: 1em;
+grid-row-gap: 1em;
+margin: 4em;
+margin-top:0;
+
+}
+
+.productos {
+display: grid;
+grid-template-rows: 1fr 1fr;
+padding: 2%;
+background-color: rgba(223, 171, 119, 0.205);
+
+}
+.imagenProducto{
+display: grid;
+justify-content: center;
+justify-items: center;
+}
+
+.imagenProducto img {
+width: 70%;
+max-height: 11em;
+
+}
+
+.imagenProducto img:hover{
+transition: ease 1s;
+transform: scale(2,2) rotate(15deg);
+
+}
+
+.infoProducto {
+padding-top: 10px;
+text-align: center;
+}
+/*-------*/
+
+.form{
+width:440px;
+height:540px;
+background:#ece8e0;
+border-radius:8px;
+box-shadow:0 0 60px -5px #000;
+margin:calc(50vh - 220px) auto;
+padding:20px 30px;
+max-width:calc(100vw - 40px);
+box-sizing:border-box;
+font-family:'Montserrat',sans-serif;
+position:relative;
+}
+  
+  .form h2{
+margin:10px 0;
+padding-bottom:10px;
+width:180px;
+color:#78788c;
+border-bottom:3px solid #78788c;
+}
+  .form input{
+width:100%;
+padding:10px;
+box-sizing:border-box;
+background:none;
+outline:none;
+resize:none;
+border:0;
+font-family:'Montserrat',sans-serif;
+transition:all .3s;border-bottom:2px solid #bebed2;
+}
+  .form input:focus{
+border-bottom:2px solid #78788c;
+}
+  .form p:before{
+content:attr(type);
+display:block;
+margin:28px 0 0;
+font-size:14px;
+color:#5a5a5a;
+}
+  .form button{
+float:right;
+padding:8px 12px;
+margin:8px 0 0;
+font-family:'Montserrat',sans-serif;
+border:2px solid#78788c;
+background:0;
+color:#5a5a6e;
+cursor:pointer;
+transition:all .3s;
+}
+  .form button:hover{
+background:#78788c;
+color:#fff;
+  }
+
+  /*-------*/
+
+footer{
+display: grid;
+grid-template-columns: 30% 20%;
+justify-content:space-evenly;
+background-color: rgb(247, 190, 85);
+font-size: small;
+width: 100%;
+text-transform: uppercase;
+
+}
+
+footer p{
+font-size: x-small;
+
+}
+
+footer :nth-child(2) li{
+display: inline;
+margin: 0;
+    
+}
+
+
+footer :nth-child(2) h2{
+font-size: small;
+}
+
+footer span{
+font-size: small;
+font-weight: bolder;
+
+}
+
+@media(max-width: 650px){
+
+  #barraSuperior{
+  grid-template-columns: 30% 60%;
+  }
+
+  #horario{
+  width: 18em;
+  padding: 0em;
+  }
+
+  #presentacion p{
+
+    padding: 0em;
+  }
+
+ .menus{
+grid-template-columns: 1fr 1fr;
+
+ }
+
+}
+
+@media(max-width: 450px){
+
+ .menus{
+grid-template-columns: 1fr;
+
+ }
+
+}
