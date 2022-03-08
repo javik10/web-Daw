@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+    <head>
+
+		<meta charset="UTF8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Javier del Aguila Sola">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+
+        <style type="text/css">
+            body{background-color: aquamarine;}
+            h1{color:rgb(245, 165, 165); font-size:3em;}
+
+        </style>
+
+
+		<title>Tema 2</title>
+		<base href="index.html">
+		<link rel="stylesheet" href="style.css">
+        <link href="jk10.ico" rel="icon" type="image/x-icon">
+
+    </head>
+    <body>
+
+        <div id="container">
+            <div id="barraSuperior">
+                <div id="logo">
+                    <header>
+                        <a href="index.html" role="Logo"><img src="jk10.png" alt="Logo"></a>
+                    </header>
+                </div>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="../Index.html" tabindex="1">Inicio</a></li>                  
+                        <li><a href="../Tema1.html" tabindex="2">Tema 1</a></li>
+                        <li><a href="index.html" class="desplegable" tabindex="5">Tema 2</a></li>
+                        <li><a href="../Tema3/index.html" tabindex="5">Tema 3</a></li>
+                        <li><a href="../Tema5.html"tabindex="3">Tema 5</a></li>
+                        <li><a href="../Tema6.html" tabindex="4">Tema 6</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+            
+            <div id="contenido">
+                <main>
+                    <article>
+
+                    <section>
+
+                        <details>
+                            <summary>
+                                <a  name="estilos"></a>
+                                <h1>Uso estilos</h1>
+                                <hr>
+                            </summary>
+                            <p>Las hojas de estilo nacieron con el propósito de separar la presentación de la estructura de los documentos HTML.
+                                Se tratan de un estándar de la W3C para aplicar distintos estilos, formatos y características a los documentos como HTML.
+                                El metododo mas recomendado para el uso de estilos es con un archivo externo css pero se puede aplicar en el mismo documento.
+                            </p>
+                            <p>Para añadir estilos en el mismo archivo se hace utilizando la etiqueta style dentro del head de la página de la misma forma que en el ejemplo.</p>
+                            <div>
+                                <img src="/Tema2/resource/ejemploCss1.png" alt="Ejemplo uso css en el mismo html">
+                            </div>
+                            <p>Hay que tener en cuenta que las líneas css que se encuentran en el archivo tienen preferencia frente a las que se encuentran en un archivo externo.</p>
+                                
+                            </video>
+                        </details>
+                    </section>
+
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="link"></a>
+                                <h1>Link</h1>
+                                <hr>
+                            </summary>
+                        
+                            <p>Para utilizar una hoja de estilos en un archivo externo, este tendra que tener la extensión css.
+                                Para adjuntar el fichero tendremos que hacerlo siguiendo el ejemplo.
+                            </p>
+                            <div>
+                                <img src="/Tema2/resource/cssexterno.png" alt="Ejemplo uso css en un archivo externo">
+                            </div>
+                            <p>Tambien se puede importar utilizando la funcion @import.</p>
+                        </details>
+                    </section>
+
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="class"></a>
+                                <h1>Class/CSS</h1>
+                                <hr>
+                            </summary>
+                            <p>Para ser capaz de seleccionar elementos concretos sin seleccionar todos los elementos de la mismna etiqueta podemos utilizar las clases, las cuales sera los mismo que asignarle un nombre a una o varias etiquetas en especifico para despues utilizar ese mismo nombre precedido por un punto para hacer referencia es estos y darles estilo.</p>
+                            <div>
+                                <img src="/Tema2/resource/classcss.png" alt="Ejemplo uso de clases en css">
+                            </div>
+                            <p>Para darle el nombre a la clase en html se hace usando el atributo class.</p>
+                            <div>
+                                <img src="/Tema2/resource/classhtml.png" alt="Asignar nombre de la clase en html">
+                            </div>
+                        </details>
+                    </section>
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="id"></a>
+                                <h1>Id/CSS</h1>
+                                <hr>
+                            </summary>
+                            <p>Los identificadores en css funcionan de forma similar a como lo hacen las clases, diferencia mas importante de que solo se puede asignar un id a una etiqueta, es decir, varias etiquetas no pueden tener el mismo id. Otra diferencia es que a la hora de nombrar el id en nuestro css lo haremos utilizando # en lugar del punto.</p>
+                            <img src="/Tema2/resource/idcss.png" alt="Ejemplo de uso del id en css">
+                        </details>
+                    </section>
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="pseudoclases"></a>
+                                <h1>PseudoClases</h1>
+                                <hr>
+                            </summary>
+                                <p>Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.</p>
+                                <p>Ponerle una marca a un elemento HTML para que esté permanentemente escuchando para ver si el usuario hace algo con ello. En el momento en el que el usuario hace algo la pseudoclase reacciona y dará el estilo que queramos.</p>
+                                <div>
+                                    <video src="/Tema2/resource/ESPECIFICIDAD, HERENCIA Y CASCADA.mp4" controls></video>
+                                </div>
+                        </details>
+                    </section>
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="selectores"></a>
+                                <h1>Selectores</h1>
+                                <hr>
+                            </summary>
+                            <p>Desde CSS3 ya se pueden aplicar estilos a los atributos de las etiquetas:</p>
+                            <p>Esto da opción a utilizar tanto los atributos como incluso los valores que tienen esos atributos àra aplicar los estilos que queramos. Eso no significa que el estilo se aplique a esos atributos, sino a aquellas etiquetas que tengan esos atributos.</p>
+                            <p>Pueden llegar a utilizarse mecanismos similares a las expresiones regulares para abarcar mas en la selección.</p>
+                            <p> Utilizando '^' puedes seleccionar las etiquetas que su atributo empiece por el valor que lo sigue</p>
+                            <p> Utilizando '*' selecciona aquellas etiquetas que su atributo contenga el valor que lo sigue</p>
+                            <p> Utilizando '$' selecciona aquellas etiquetas que su atributo acabe con el valor que lo sigue</p>
+                        </details>
+                    </section>
+
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="flexbox"></a>
+                                <h1>Flexbox</h1>
+                                <hr>
+                            </summary>
+
+                            <p>FLEX es un nuevo valore (HTML5) que vamos a poder dar a la propiedad CSS display y que nos van a permitir, junto con otras propiedades, maquetar nuestras páginas web de una manera más fácil a la que se usaba tradicionalmente.</p>
+                            <p>Vamos a tener dos elementos:
+                                Contenedor
+                                Items
+                            </p>
+                                <p>
+                                Lo primero que hay que hacer es darle un valor a la propiedad DISPLAY del contenedor. Existen dos valores posibles:
+                            </p>
+                            <p>
+                                Display: flex → Permite que el contenedor sea de bloque. Similar a block, ocupa todo el ancho del padre.
+                                Display:inline-flex → Permite que el contenedor sea de línea. Similar a inline-block, ocupa solo el contenido.
+                            </p>
+                            <p>
+                            En Flex establecemos las propiedades al elemento padre y se modificará la posición de los elementos flexibles dentro de él.
+                            </p>
+                            <p>
+                            Eje Principal: los contenedores flexibles tendrán una orientación principal específica. Por defecto es en horizontal (en fila).
+                            </p>
+                            <p>
+                            Eje Secundario: los contenedores también tendrán una orientación secundaria, perpendicular a la principal. Si la principal es en horizontal, la secundaria será en vertical y viceversa.
+                            </p>
+                            <div>
+                                <img src="/Tema2/resource/flex-elementos.jpg" alt="Flexox resumen de lo explicado">
+                            </div>
+                            <p>Utilizando la propiedad FLEX-DIRECTION podemos modificar la dirección del eje principal del contenedor para que se oriente en horizontal (por defecto) o en vertical.</p>
+
+                            <div>
+                                <table>
+                                    <tr>
+                                        <th colspan="3">ALINEACIONES</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Alineación Horizontal</td>
+                                        <td>JUSTIFY-CONTENT</td>
+                                        <td>Eje PPAL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alineación Vertical (multilínea)</td>
+                                        <td>ALIGN-CONTENT</td>
+                                        <td>Eje Sec</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alineación Vertica</td>
+                                        <td>ALIGN-ITEMS</td>
+                                        <td>Eje Sec.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alineación Vertical
+                                            (ítem hijo específico)</td>
+                                        <td>ALIGN-SELF</td>
+                                        <td>Eje Sec</td>
+                                    </tr>
+                                </table>
+                            </div>
+                                <p>Valores que podemos darles para posicioner en el eje principal</p>
+                            <div>
+                                <img src="/Tema2/resource/flexprincipal.png" style="margin-top: 1em;" alt="Flexox resumen de lo explicado">
+                            </div>
+
+                            <p>Valores que podemos darles para posicioner en el eje principal</p>
+                            <div>
+                                <img src="/Tema2/resource/flexsecundario.png" alt="Flexox resumen de lo explicado" style="margin-top: 1em; width: 30%;">
+                            </div>
+
+                        </details>
+                    </section>
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="transiciones"></a>
+                                <h1>Transiciones</h1>
+                                <hr>
+                            </summary>
+                            <p>Las transiciones CSS, parte del borrador de la especificación CSS3, proporcionan una forma de animar los cambios de las propiedades CSS, en lugar de que los cambios surtan efecto de manera instantánea.Las transiciones CSS se controlan mediante la propiedad abreviada transition.</p>
+                            <p>Puedes controlar los componentes individuales de la transición usando las siguientes subpropiedades: transition-property, transition-duration, transition-timing-function, transition-delay</p>
+
+                        </details>
+                    </section>
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="transformaciones"></a>
+                                <h1>Transformaciones</h1>
+                                <hr>
+                            </summary>
+                            <p>Las transformaciones son una de las características de CSS más interesantes y potentes que se introducen en el lenguaje para convertir las hojas de estilo en un sistema capaz de realizar efectos visuales 2D y 3D. Estas transformaciones se pueden efectuar en CSS mediante la propiedad transform.</p>
+                            <p>Las transformaciones aplicables son: Scale (escalar), Translate (transladar), Rotate (rotar), Skew (torcer)  Matrix(mueve o transforma los elementos con precisión de píxel).</p>
+                        </details>
+                    </section>
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="animaciones"></a>
+                                <h1>Animaciones</h1>
+                                <hr>
+                            </summary>
+
+                            <p>Las animaciones CSS3 permiten animar la transición entre un estilo CSS y otro. Las animaciones constan de dos componentes: un estilo que describe la animación CSS y un conjunto de fotogramas que indican su estado inicial y final, así como posibles puntos intermedios en la misma.</p>
+                            <p>Desde que se define el tiempo y el ritmo de la animación, el fotograma usa percentage para indicar en qué momento de la secuencia de la animación tiene lugar. 0% es el principio, 100% es el estado final de la animación.</p>
+                            <div>
+                             <video src="/Tema2/resource/Transiciones,TrasformacionesyAnimaciones.mp4" controls></video>
+                            </div>
+                        </details>
+                    </section>
+                    <section>
+                        <details>
+                            <summary>
+                                <a  name="media"></a>
+                                <h1>MediaQueries</h1>
+                                <hr>
+                            </summary>
+
+                            <p>Las media queries son útiles cuando deseas modificar tu página web o aplicación en función del tipo de dispositivo.</p>
+                            <p>Aplicar estilos condicionales con las reglas-at @media e @import de CSS.</p>
+                            <p>@media (min-width: 700px) and (orientation: landscape) { ... }</p>
+                            <div>
+                                <video src="/Tema2/resource/Mediaqueries.mp4" controls></video>
+                            </div>
+
+                        </details>
+                    </section>
+                    
+                </article>
+                </main>
+
+                <aside>
+                    <div>
+                    <h1>Apartados</h1>
+                    <hr>
+                    <ul>
+                        <li><a href="#estilos">Uso estilos</a></li>
+                        <li><a href="#link">Link</a></li>
+                        <li><a href="#class">Class/CSS</a></li>
+                        <li><a href="#id">Id/CSS</a></li>
+                        <li><a href="#pseudoclases">Pseudoclases</a></li>
+                        <li><a href="#selectores">Selectores</a></li>
+                        <li><a href="#flexbox">Flexbox</a></li>
+                        <li><a href="#transiciones">Transiciones</a></li>
+                        <li><a href="#transformaciones">Transformaciones</a></li>
+                        <li><a href="#animaciones">Animaciones</a></li>
+                        <li><a href="#media">MediaQueries</a></li>
+                        <li><a href="#grid">Grid</a></li>
+                    </ul>
+                    </div>
+                </aside>
+            </div>
+
+            <footer>
+                <h3>Javier del Águila Sola</h3>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>
